@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Arrow functions -> -></title>
+</head>
+<body>
+<script>
+    const names = ['wes', 'kait', 'lux'];
+
+    // Ejemplo de función antes de ES6
+    const fullNames = names.map(function (name) {
+        return `${name} bos`;
+    });
+
+    // Ejemplo de arrow function
+    const fullNames2 = names.map((name) => {
+        return `${name} bos`;
+    });
+
+    // Ejemplo de arrow function sin paréntesis, válido cuando solo se pasa un parámetro
+    const fullNames3 = names.map(name => {
+        return `${name} bos`;
+    });
+
+    // Ejemplo de arrow function con return implícito
+    const fullNames4 = names.map(name => `${name} bos`);
+
+    // Ejemplo de arrow function sin parámetros
+    const fullNames5 = names.map(() => `cool bos`);
+
+    // Ejemplo de arrow function
+    const sayMyName = (name) => {
+        alert(`Hello ${name}!`)
+    };
+
+    sayMyName('Manu');
+
+</script>
+</body>
+</html>
