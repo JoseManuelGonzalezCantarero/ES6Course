@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>let and const</title>
+</head>
+<body>
+<script>
+    //Const sirve para declarar valores constantes y let para variables
+    const key = 'abc123';
+    let points = 50;
+    let winner = false;
+
+    // Al declarar person como const, el objeto es inmutable, pero sus propiedades si pueden cambiar de valor
+    const person = {
+        name: 'Wes',
+        age: 28
+    };
+
+    // Al usar Object.freeze, el valor de las propiedades de person no cambian
+    const wes = Object.freeze(person);
+
+</script>
+</body>
+</html>
